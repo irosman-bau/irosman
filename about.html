@@ -767,9 +767,10 @@
     width: 80%; /* Adjust the width as needed */
     max-width: 600px; /* Optional: Set a max width for better visibility */
     text-align: center; /* Center text within the modal */
-    position: relative; /* Allow positioning within the modal */
+    position: absolute; /* Absolute positioning */
     top: 30%; /* Start 30% from the top */
-    transform: translateY(-30%); /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -30%); /* Center vertically */
 }
     
 .close {
@@ -1303,12 +1304,15 @@ h6:hover {
 
     <script>
       function openModal(modalId) {
-            document.getElementById(modalId).style.display = 'block';
-        }
+    const modal = document.getElementById(modalId);
+    modal.style.display = 'block';
+    modal.style.top = '30%';  // Position 30% from the top
+    modal.style.transform = 'translateY(-30%)'; // Center the modal vertically
+}
 
-        function closeModal(modalId) {
-            document.getElementById(modalId).style.display = 'none';
-        }
+function closeModal(modalId) {
+    document.getElementById(modalId).style.display = 'none';
+}
     </script>
 
     <script>
