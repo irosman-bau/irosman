@@ -768,9 +768,17 @@
     max-width: 600px; /* Optional: Set a max width for better visibility */
     text-align: center; /* Center text within the modal */
     position: absolute; /* Absolute positioning */
-    top: 30%; /* Start 30% from the top */
+    top: 30vh; /* Start 30% from the top (viewport height) */
     left: 50%; /* Center horizontally */
     transform: translate(-50%, -30%); /* Center vertically */
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 640px) {
+    .modal-content {
+        top: 30vh; /* Keep the position at 30% from the top */
+        transform: translate(-50%, -30%); /* Ensure vertical centering */
+    }
 }
     
 .close {
