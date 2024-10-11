@@ -860,12 +860,15 @@
 
 .modal-content {
     background-color: #fefefe;
-    position: fixed; /* Changed to fixed for full control */
-    margin-top:30%auto;
-    padding:20px;
-    border: solid 1px #888;
-    width:80%;
-    text-align:center;
+    margin: auto; /* Center horizontally */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Adjust width as needed */
+    max-width: 600px; /* Optional: Set a max width for better visibility */
+    text-align: center;
+    position: relative; /* Position relative to allow proper centering */
+    top: 30%; /* Start 30% from the top */
+    transform: translateY(-30%); /* Center vertically */
 }
 
 .close {
