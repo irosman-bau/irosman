@@ -755,12 +755,16 @@
 
         .modal-content {
     background-color: #fefefe;
-    margin: 30% auto; /* Center modal vertically and horizontally */
+    margin: auto; /* Center horizontally */
     padding: 20px;
     border: 1px solid #888;
-    width: 80%; /* Adjust the width as needed */
+    width: 80%; /* Adjust width as needed */
+    max-width: 600px; /* Optional: Set a max width for better visibility */
     text-align: center;
-        }
+    position: relative; /* Position relative to allow proper centering */
+    top: 30%; /* Start 30% from the top */
+    transform: translateY(-30%); /* Center vertically */
+}
 
       .close {
           color: #aaa;
