@@ -1,0 +1,1375 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="Public/Logo.jpg" />
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@301,400,401,900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IROSMAN</title>
+    <style>
+        /*! modern-normalize v3.0.1 | MIT License | https://github.com/sindresorhus/modern-normalize */
+        /*Document*/
+        /** Use a better box model (opinionated).*/
+        *,
+        ::before,
+        ::after {
+            box-sizing: border-box;
+        }
+
+        html {
+            /* Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3) */
+            font-family:
+                system-ui,
+                'Segoe UI',
+                Roboto,
+                Helvetica,
+                Arial,
+                sans-serif,
+                'Apple Color Emoji',
+                'Segoe UI Emoji';
+            line-height: 1.15; /* 1. Correct the line height in all browsers. */
+            -webkit-text-size-adjust: 100%; /* 2. Prevent adjustments of font size after orientation changes in iOS. */
+            tab-size: 4; /* 3. Use a more readable tab size (opinionated). */
+        }
+
+        /*
+        Sections
+        ========
+        */
+
+        body {
+            margin: 0; /* Remove the margin in all browsers. */
+        }
+
+        /*
+        Text-level semantics
+        ====================
+        */
+
+        /**
+        Add the correct font weight in Chrome and Safari.
+        */
+
+        b,
+        strong {
+            font-weight: bolder;
+        }
+
+        /**
+        1. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+        2. Correct the odd 'em' font sizing in all browsers.
+        */
+
+        code,
+        kbd,
+        samp,
+        pre {
+            font-family:
+                ui-monospace,
+                SFMono-Regular,
+                Consolas,
+                'Liberation Mono',
+                Menlo,
+                monospace; /* 1 */
+            font-size: 1em; /* 2 */
+        }
+
+        /**
+        Add the correct font size in all browsers.
+        */
+
+        small {
+            font-size: 80%;
+        }
+
+        /**
+        Prevent 'sub' and 'sup' elements from affecting the line height in all browsers.
+        */
+
+        sub,
+        sup {
+            font-size: 75%;
+            line-height: 0;
+            position: relative;
+            vertical-align: baseline;
+        }
+
+        sub {
+            bottom: -0.25em;
+        }
+
+        sup {
+            top: -0.5em;
+        }
+
+        /*
+        Tabular data
+        ============
+        */
+
+        /**
+        Correct table border color inheritance in Chrome and Safari. (https://issues.chromium.org/issues/40615503, https://bugs.webkit.org/show_bug.cgi?id=195016)
+        */
+
+        table {
+            border-color: currentcolor;
+        }
+
+        /*
+        Forms
+        =====
+        */
+
+        /**
+        1. Change the font styles in all browsers.
+        2. Remove the margin in Firefox and Safari.
+        */
+
+        button,
+        input,
+        optgroup,
+        select,
+        textarea {
+            font-family: inherit; /* 1 */
+            font-size: 100%; /* 1 */
+            line-height: 1.15; /* 1 */
+            margin: 0; /* 2 */
+        }
+
+        /**
+        Correct the inability to style clickable types in iOS and Safari.
+        */
+
+        button,
+        [type='button'],
+        [type='reset'],
+        [type='submit'] {
+            -webkit-appearance: button;
+        }
+
+        /**
+        Remove the padding so developers are not caught out when they zero out 'fieldset' elements in all browsers.
+        */
+
+        legend {
+            padding: 0;
+        }
+
+        /**
+        Add the correct vertical alignment in Chrome and Firefox.
+        */
+
+        progress {
+            vertical-align: baseline;
+        }
+
+        /**
+        Correct the cursor style of increment and decrement buttons in Safari.
+        */
+
+        ::-webkit-inner-spin-button,
+        ::-webkit-outer-spin-button {
+            height: auto;
+        }
+
+        /**
+        1. Correct the odd appearance in Chrome and Safari.
+        2. Correct the outline style in Safari.
+        */
+
+        [type='search'] {
+            -webkit-appearance: textfield; /* 1 */
+            outline-offset: -2px; /* 2 */
+        }
+
+        /**
+        Remove the inner padding in Chrome and Safari on macOS.
+        */
+
+        ::-webkit-search-decoration {
+            -webkit-appearance: none;
+        }
+
+        /**
+        1. Correct the inability to style clickable types in iOS and Safari.
+        2. Change font properties to 'inherit' in Safari.
+        */
+
+        ::-webkit-file-upload-button {
+            -webkit-appearance: button; /* 1 */
+            font: inherit; /* 2 */
+        }
+
+        /*
+        Interactive
+        ===========
+        */
+
+        /*
+        Add the correct display in Chrome and Safari.
+        */
+
+        summary {
+            display: list-item;
+        }
+    </style>
+    <style>
+        :root {
+        --clr-dark:#070a13;
+        --clr-light:#9ca3af;
+        --clr-gray600:#4b5563;
+        --clr-orange500:#f97316;
+        --clr-orange-dark: #c2410c;
+        --clr-zinc:#71717a;
+
+        --size-xxs:0.5rem;
+        --size-xs:0.75rem;
+        --size-s:0.875rem;
+        --size-base:1rem;
+        --size-l:1.125rem;
+        --size-xl:1.25rem;
+        --size-2xl:1.5rem;
+        --size-3xl:1.875rem;
+        --size-4xl:2.25rem;
+        --size-5xl:3rem;
+        --size-6xl:3.75rem;
+        --size-7xl:4.5rem;
+        --size-8xl:6rem;
+        --size-9xl:8rem;
+        --size-10xl:10rem;
+        }
+
+
+        *{
+        margin: 0;
+        line-height: calc(1em + 0.5rem);
+        }
+
+        html {
+        scroll-behavior: smooth;
+        }
+
+        body {
+        font-family: 'Satoshi', sans-serif;
+        font-weight: 400; /* Regular weight */
+        background-color: #070a13;
+        color: #9ca3af ;
+        text-align: center;
+        }
+
+        img, 
+        picture,
+        video,
+        canvas,
+        svg {
+        display: block;
+        max-width: 100%;
+        user-select: none;
+        }
+
+        button {
+        display: inline-block;
+        padding: 0;
+        border: none;
+        background: none;
+        cursor: pointer;
+        color: inherit;
+        }
+
+        a {
+        color:#f97316;
+        
+        }
+
+        .projekte_link { 
+        text-decoration: none;
+        }
+    </style>
+    <style>
+        .header{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-top: 2rem;
+                padding-bottom: 2rem;
+                position: relative;
+                z-index: 9999;
+            }
+
+            .header__logo {
+                width: 8rem;
+                height: auto ;
+            }
+
+            .header__menu { 
+                display: none;
+            }
+
+            .header__bars{
+                color: var(--clr-orange500);
+                width:var(--size-2xl);
+                height: var(--size-2xl);
+                display: block;
+            }
+            /* Responsive Design */
+            /*xs*/
+            @media (min-width: 475px) {
+                .header__logo {
+                    width: 8.5rem;
+                    height: auto ;
+                }
+            }
+
+            /*s*/
+            @media (min-width: 640px) {
+                .header__logo {
+                    width: 9.5rem;
+                    height: auto ;
+                }
+            }
+
+            /*m*/
+            @media (min-width: 768px) {
+                .header__logo {
+                    width: 11.5rem;
+                    height: auto ;
+                }
+
+                .header__menu{
+                    display: flex;
+                    align-items: center;
+                    list-style: none;
+                    padding: 0;
+                    gap: 2em;
+                }
+                
+                .header__link{
+                    font-size: var(--size-base);
+                    text-decoration: none;
+                    font-weight: 600;
+                    color: var(--clr-zinc);
+                    letter-spacing: -0.05rem;
+                    transition: color 0.3s;
+                }
+                
+                .header__link:hover {
+                    color: var(--clr-orange500);
+                }
+
+                .header__bars {
+                    display: none;
+                }
+            }
+
+            /*l*/
+            @media (min-width: 1024px) {
+                .header__logo {
+                    width: 14.5rem;
+                    height: auto ;
+                }
+
+                .header__link{
+                    font-size: var(--size-l);
+                }
+
+            }
+
+            /*xl*/
+            @media (min-width: 1280px) {
+                .header__logo {
+                    width: 16.5rem;
+                    height: auto ;
+                }
+                
+                .header__link{
+                    font-size: var(--size-xl);
+                }
+            }
+
+            /*xxl*/
+            @media (min-width: 1536px) {
+                .header__logo {
+                    width: 19.5rem;
+                    height: auto ;
+                }
+
+                .header__link{
+                    font-size: var(--size-2xl);
+                }
+            }
+    </style>
+    <style>
+        .backgrounp{
+    width: 12rem;
+    display: block;
+    margin: 0 auto; /* Centers the image horizontally */
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.hero__h2{
+    font-size: var(--size-base);
+    color: var(--clr-light);
+    font-weight: 550; /* Regular weight for h2 and h3 */
+    font-size: 1.2rem;
+}
+
+.hero__h3{
+    font-size: var(--size-s);
+    color: var(--clr-light);
+    line-height: 1.35;
+    font-weight: 400; /* Regular weight for h2 and h3 */
+    font-size: 0.7rem
+}
+
+.hero__h1{
+    font-weight: 500; /* If you want the h1 to be bold */
+    font-size: var(--size-xl);
+    color: var(--clr-orange-dark);
+    letter-spacing: -0.05rem;
+    line-height: 1.5;
+}
+
+/* Maps Image */
+.footerimg {
+    width: 7rem;
+    display: block;
+    margin: 0 auto; /* Centers the image horizontally */
+}
+
+/* Responsive Design */
+/*xs*/
+@media (min-width: 475px) {
+    .hero {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 1.5rem;
+    }
+    
+    .hero__h2{
+        font-size: var(--size-base);
+        color: var(--clr-light);
+        font-weight: 550; /* Regular weight for h2 and h3 */
+        font-size: 1.2rem;
+    }
+    
+    .hero__h3{
+        font-size: var(--size-s);
+        color: var(--clr-light);
+        line-height: 1.35;
+        font-weight: 400; /* Regular weight for h2 and h3 */
+        font-size: 0.7rem
+    }
+    
+    .hero__h1{
+        font-weight: 500; /* If you want the h1 to be bold */
+        font-size: var(--size-xl);
+        color: var(--clr-orange-dark);
+        letter-spacing: -0.05rem;
+        line-height: 1.5;
+    }
+
+    /*Baustelle Image*/
+    .backgrounp{
+        width: 14rem;
+        display: block;
+        margin: 0 auto; /* Centers the image horizontally */
+    }
+
+    /* Maps Image */
+    .footerimg {
+        width: 8rem;
+        display: block;
+        margin: 0 auto; /* Centers the image horizontally */
+    }
+}
+
+/*s*/
+@media (min-width: 640px) {
+    .hero {
+        gap: 1.2rem;
+    }
+    
+    .hero__h2{
+        font-size: var(--size-base);
+        color: var(--clr-light);
+        font-weight: 550; /* Regular weight for h2 and h3 */
+        font-size: 1.3rem;
+    }
+    
+    .hero__h3{
+        font-size: var(--size-s);
+        color: var(--clr-light);
+        line-height: 1.45;
+        font-weight: 400; /* Regular weight for h2 and h3 */
+        font-size: 0.8rem
+    }
+    
+    .hero__h1{
+        font-weight: 500; /* If you want the h1 to be bold */
+        font-size: var(--size-2xl);
+        color: var(--clr-orange-dark);
+        letter-spacing: -0.05rem;
+        line-height: 1.5;
+    }
+
+    /*Baustelle Image*/
+    .backgrounp{
+        width: 17rem;
+        display: block;
+        margin: 0 auto; /* Centers the image horizontally */
+    }
+
+    /* Maps Image */
+    .footerimg {
+        width: 10.5rem;
+        display: block;
+        margin: 0 auto; /* Centers the image horizontally */
+    }
+}
+
+/*m*/
+@media (min-width: 768px) {
+    .hero {
+        gap: 1.4rem;
+    }
+    
+    .hero__h2{
+        font-size: var(--size-base);
+        color: var(--clr-light);
+        font-weight: 550; /* Regular weight for h2 and h3 */
+        font-size: 1.4rem;
+    }
+    
+    .hero__h3{
+        font-size: var(--size-s);
+        color: var(--clr-light);
+        line-height: 1.6;
+        font-weight: 400; /* Regular weight for h2 and h3 */
+        font-size: 0.9rem
+    }
+    
+    .hero__h1{
+        font-weight: 500; /* If you want the h1 to be bold */
+        font-size: var(--size-3xl);
+        color: var(--clr-orange-dark);
+        letter-spacing: -0.05rem;
+        line-height: 1.5;
+    }
+
+    /*Baustelle Image*/
+    .backgrounp{
+        width: 20rem;
+        display: block;
+        margin: 0 auto; /* Centers the image horizontally */
+    }
+
+    /* Maps Image */
+    .footerimg {
+        width: 13.5rem;
+        display: block;
+        margin: 0 auto; /* Centers the image horizontally */
+    }
+}
+
+/*l*/
+@media (min-width: 1024px) {
+    .hero {
+        gap: 1.6rem;
+    }
+    
+    .hero__h2{
+        font-size: var(--size-base);
+        color: var(--clr-light);
+        font-weight: 550; /* Regular weight for h2 and h3 */
+        font-size: 1.6rem;
+    }
+    
+    .hero__h3{
+        font-size: var(--size-s);
+        color: var(--clr-light);
+        line-height: 1.6;
+        font-weight: 400; /* Regular weight for h2 and h3 */
+        font-size: 1rem
+    }
+    
+    .hero__h1{
+        font-weight: 500; /* If you want the h1 to be bold */
+        font-size: var(--size-4xl);
+        color: var(--clr-orange-dark);
+        letter-spacing: -0.05rem;
+        line-height: 1.5;
+        font-size: 2rem;
+    }
+
+    /*Baustelle Image*/
+    .backgrounp{
+        width: 25rem;
+        display: block;
+        margin: 0 auto; /* Centers the image horizontally */
+    }
+
+    /* Maps Image */
+    .footerimg {
+        width: 16.5rem;
+        display: block;
+        margin: 0 auto; /* Centers the image horizontally */
+    }
+}
+
+/*xl*/
+@media (min-width: 1280px) {
+    .hero {
+        gap: 1.8rem;
+    }
+    
+    .hero__h2{
+        font-size: var(--size-base);
+        color: var(--clr-light);
+        font-weight: 550; /* Regular weight for h2 and h3 */
+        font-size: 1.8rem;
+    }
+    
+    .hero__h3{
+        font-size: var(--size-s);
+        color: var(--clr-light);
+        line-height: 1.6;
+        font-weight: 400; /* Regular weight for h2 and h3 */
+        font-size: 1.2rem
+    }
+    
+    .hero__h1{
+        font-weight: 500; /* If you want the h1 to be bold */
+        font-size: var(--size-4xl);
+        color: var(--clr-orange-dark);
+        letter-spacing: -0.05rem;
+        line-height: 1.6;
+    }
+
+    /*Baustelle Image*/
+    .backgrounp{
+        width: 29rem;
+        display: block;
+        margin: 0 auto; /* Centers the image horizontally */
+    }
+
+    /* Maps Image */
+    .footerimg {
+        width: 19.5rem;
+        display: block;
+        margin: 0 auto; /* Centers the image horizontally */
+    }
+}
+
+/*xxl*/
+@media (min-width: 1536px) {
+    .hero {
+        gap: 2rem;
+    }
+    
+    .hero__h2{
+        font-size: var(--size-base);
+        color: var(--clr-light);
+        font-weight: 550; /* Regular weight for h2 and h3 */
+        font-size: 2rem;
+    }
+    
+    .hero__h3{
+        font-size: var(--size-s);
+        color: var(--clr-light);
+        line-height: 1.6;
+        font-weight: 400; /* Regular weight for h2 and h3 */
+        font-size: 1.4rem
+    }
+    
+    .hero__h1{
+        font-weight: 500; /* If you want the h1 to be bold */
+        font-size: var(--size-5xl);
+        color: var(--clr-orange-dark);
+        letter-spacing: -0.05rem;
+        line-height: 1.5;
+    }
+
+    /*Baustelle Image*/
+    .backgrounp{
+        width: 35rem;
+        display: block;
+        margin: 0 auto; /* Centers the image horizontally */
+    }
+
+    /* Maps Image */
+    .footerimg {
+        width: 23.5rem;
+        display: block;
+        margin: 0 auto; /* Centers the image horizontally */
+    }
+}
+    </style>
+    <style>
+        .intro__div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.image__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.image__text a{
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: #b36928;
+}
+
+.image-text p {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.image-text h5 {
+    transition: transform 0.2s ease, color 0.2s ease; /* Smooth transition for size and color */
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%; /* Could be more or less, depending on screen size */
+    text-align: center;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+/*xs*/
+@media (min-width: 475px) {
+  
+}
+
+/*s*/
+@media (min-width: 640px) {
+    .intro__div {
+        flex-direction: row; /* Switch to a row layout */
+        justify-content: space-around;
+    }
+}
+
+/*m*/
+@media (min-width: 768px) {
+   
+}
+
+/*l*/
+@media (min-width: 1024px) {
+    
+}
+
+/*xl*/
+@media (min-width: 1280px) {
+    
+}
+
+/*xxl*/
+@media (min-width: 1536px) {
+   
+}
+
+    </style>
+    <style>
+        .about__div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    text-align: center; /* Center text within each box */
+}
+
+.image-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.image__text a{
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: #b36928;
+}
+
+.image-text p {
+    font-size: 1.2rem;
+    color: #333;
+}
+.image-text h5 {
+    transition: transform 0.2s ease, color 0.2s ease; /* Smooth transition for size and color */
+}
+
+.image-text h5:hover {
+    transform: scale(1.1); /* Slightly increase the size */
+    color: black; /* Change color to black on hover */
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%; /* Could be more or less, depending on screen size */
+    text-align: center;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+/*xs*/
+@media (min-width: 475px) {
+  
+}
+
+/*s*/
+@media (min-width: 640px) {
+    .about__div {
+        flex-direction: row; /* Switch to a row layout */
+        justify-content: space-around;
+    }
+}
+
+/*m*/
+@media (min-width: 768px) {
+   
+}
+
+/*l*/
+@media (min-width: 1024px) {
+    
+}
+
+/*xl*/
+@media (min-width: 1280px) {
+    
+}
+
+/*xxl*/
+@media (min-width: 1536px) {
+   
+}
+    </style>
+    <style>
+        .image__text_service {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .image__text_service a{
+            text-decoration: none;
+            font-size: 1.4rem;
+            color: #b36928;
+        }
+
+        .image-text_service p {
+            font-size: 1.2rem;
+            color: #333;
+        }
+
+        .image-text_service h5 {
+            transition: transform 0.2s ease, color 0.2s ease; /* Smooth transition for size and color */
+        }
+
+        .image__text_service a:hover {
+            transform: scale(1.3); /* Slightly increase the size on hover */
+        }
+    </style>
+    <style>
+        .mobile-nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    background-color: var(--clr-dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.mobile-nav__menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.mobile-nav__link{
+    font-size: var(--size-xl);
+    color: var(--clr-light);
+    text-decoration: none;
+    font-weight: 600;
+
+    letter-spacing: -0.05em;
+    transition: color 0.3s;
+}
+
+.mobile-nav__link:hover{
+    color: var( --clr-orange500);
+}
+
+.hidden {
+    display: none;
+  }
+  
+  .mobile-nav.active {
+    display: flex;
+  }
+    </style>
+    <style>
+        .btn{
+    display: inline-block;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: -0.05rem;
+    background-color: #4b5563;
+    color: #f97316;
+    padding: 0.5em 1em;
+    border-radius: 6px;
+    box-shadow: 0 10px 20px rgba(225, 29, 72, 0.5),0 6px 6px rgba(225, 29, 72, 0.5), 0 0 100px -10px var(#f97316);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 14px 28px rgba(225, 29, 72, 0.25),0 10px 10px rgba(225, 29, 72, 0.22), 0 0 120px -10px var(#f97316);
+}
+
+.container{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+} 
+
+.section { 
+    margin-top: 5rem;
+}
+
+strong {
+    font-weight: 500;
+    color: var( --clr-orange500);
+}
+
+h5 {
+    font-size: large;
+    color: var(--clr-zinc);
+}
+
+h6 {
+    font-size: 1.2rem;
+    transition: transform 0.3s ease; /* Smooth transition for scaling */
+}
+
+h6:hover {
+    transform: scale(1.2); /* Increase the size by 20% on hover */
+    background-color: var(--clr-light);
+}
+
+.projekte_link h6 {
+    display: inline-block;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+.projekte_link:hover h6 {
+    animation: wiggle 1s ease-in-out infinite;
+  }
+  
+  @keyframes wiggle {
+    0%, 100% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(2deg);
+    }
+    50% {
+      transform: rotate(-2deg);
+    }
+    75% {
+      transform: rotate(2deg);
+    }
+  }
+.image__text img {
+    width: 5rem;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.image__text:hover {
+    transform: scale(1.3); /* Slightly increase the size on hover */
+}
+
+
+/* Responsive Design */
+/*xs*/
+@media (min-width: 475px) {
+    .container {
+        max-width: 475px;
+    }
+
+    .image__text img {
+        width: 5.5rem;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    h6 {
+        font-size: 1.4rem;
+    }
+}
+
+/*s*/
+@media (min-width: 640px) {
+    .container {
+        max-width: 640px;
+    }
+
+    .image__text img {
+        width: 6rem;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    h6 {
+        font-size: 1.6rem;
+    }
+}
+
+/*m*/
+@media (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+
+    .image__text img {
+        width: 6.5rem;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    h6 {
+        font-size: 1.8rem;
+    }
+}
+
+/*l*/
+@media (min-width: 1024px) {
+    .container {
+        max-width: 1024px;
+    }
+
+    .section { 
+        margin-top: 10rem;
+    }
+
+    .image__text img {
+        width: 7.5rem;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    h6 {
+        font-size: 2.2rem;
+    }
+}
+
+/*xl*/
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1280px;
+    }
+
+    .image__text img {
+        width: 8.5rem;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    h6 {
+        font-size: 2.4rem;
+    }
+}
+
+/*xxl*/
+@media (min-width: 1536px) {
+    .container {
+        max-width: 1536px;
+    }
+
+    .image__text img {
+        width: 9.5rem;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    h6 {
+        font-size: 2.7rem;
+    }
+}
+    </style>
+  </head>
+  <body>
+    <header class="header container">
+
+      <div class="header__logo">
+        <a href="home.html" target="_blank">
+          <img src="Public/LogoName.jpg" alt="Logo"/>
+        </a>
+      </div>
+      <nav>
+        <ul class="header__menu">
+            <li><a class="header__link" href="index.html">Home</a></li>
+            <li><a class="header__link" href="">Leistungen</a></li>
+            <li><a class="header__link" href="about.html">Über uns</a></li>
+            <li><a class="header__link" href="#contact">Contact</a></li>
+        </ul>
+
+        <button class="header__bars" onclick="toggleMobileNav()">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path fill-rule="evenodd" d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd" />
+            </svg>        
+          </button>
+        </nav>
+  
+      </header>
+  
+      <!-- mobile nav -->
+      <div class="mobile-nav hidden">
+        <nav>
+          <ul class="mobile-nav__menu">
+            <li> 
+              <a class="mobile-nav__link" href="index.html">Home</a>
+            </li>
+            <li>
+              <a class="mobile-nav__link" href="">Leistungen</a>
+            </li>
+            <li>
+              <a class="mobile-nav__link" href="about.html">Über uns</a>
+            </li>
+            <li>
+              <a class="mobile-nav__link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- end of mobile nav -->
+
+    <main>
+      <section class="hero container">
+        <h2 class="hero__h2">Unsere Leistungen</h2>
+        <h3 class="hero__h3">Bei der Irosman Bau bieten wir eine breite Palette an umfassenden Dienstleistungen, die darauf ausgerichtet sind, Ihre Bauprojekte von der ersten Idee bis zur erfolgreichen Umsetzung zu unterstützen. Unser Ziel ist es, qualitativ hochwertige Ergebnisse zu liefern, die Ihren Anforderungen entsprechen, dabei sowohl effizient als auch kostensparend sind. Durch enge Zusammenarbeit mit unseren Kunden und Partnern können wir sicherstellen, dass jedes Projekt reibungslos und mit maximaler Zufriedenheit abgeschlossen wird.</h3>
+    </section>
+
+      <section class="about container section">
+        <div class="about__div">
+          <div class="image__text_service">
+
+            <a href="#" onclick="openModal('ersteModal');">
+                <h5 style="line-height: 2;">1. Projektplanung und Konzeptentwicklung</h5>
+            </a>
+
+            <a href="#" onclick="openModal('zweiteModal');">
+                <h5 style="line-height: 2;">2. Materialauswahl und Kostenoptimierung</h5>
+            </a>
+          
+            <a href="#" onclick="openModal('dritteModal');">
+                <h5 style="line-height: 2;">3. Baugenehmigungen und rechtliche Anforderungen</h5>
+            </a>
+    
+            <a href="#" onclick="openModal('vierteModal');">
+                <h5 style="line-height: 2;">4. Nachhaltiges Bauen</h5>
+            </a>
+          
+            <a href="#" onclick="openModal('funfteModal');">
+                <h5 style="line-height: 2;">5. Zeit- und Ressourcenplanung</h5>
+            </a>
+     
+            <a href="#" onclick="openModal('sechsteModal');">
+                <h5 style="line-height: 2;">6. Qualitäts- und Sicherheitsberatung</h5>
+            </a>
+          
+            <a href="#" onclick="openModal('siebteModal');">
+                <h5 style="line-height: 2;">7. Beratung bei der Auswahl von Subunternehmern</h5>
+            </a>
+        </div>
+
+          <!-- Modal Structure -->
+        <div id="ersteModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('ersteModal')">&times;</span>
+                <p>Von der ersten Idee bis zur Fertigstellung unterstützen wir unsere Kunden dabei, klare und umsetzbare Ziele für ihr Bauprojekt zu definieren. Unser erfahrenes Team hilft bei der Entwicklung maßgeschneiderter Konzepte, die sowohl die technischen Anforderungen als auch das Budget des Kunden berücksichtigen.</p>
+            </div>
+        </div>
+
+        <div id="zweiteModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('zweiteModal')">&times;</span>
+                <p>Wir beraten unsere Kunden bei der Auswahl der besten Materialien für ihr Bauprojekt und achten dabei sowohl auf die gewünschte Qualität als auch auf das Budget.</p>
+            </div>
+        </div>
+        
+        <div id="dritteModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('dritteModal')">&times;</span>
+                <p>Die Einholung von Baugenehmigungen und die Einhaltung aller rechtlichen Anforderungen können oft komplex und zeitaufwändig sein. Irosman Bau unterstützt ihre Kunden durch diesen Prozess.</p>
+            </div>
+        </div>
+
+        <div id="vierteModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('vierteModal')">&times;</span>
+                <p>Wir bieten auch umfassende Beratung zu umweltfreundlichen Baupraktiken und helfen unseren Kunden, energieeffiziente Materialien auszuwählen.</p>
+            </div>
+        </div>
+
+        <div id="funfteModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('funfteModal')">&times;</span>
+                <p>Effiziente Zeit- und Ressourcenplanung ist entscheidend für den Erfolg jedes Bauprojekts. Wir erstellen detaillierte Zeitpläne.</p>
+            </div>
+        </div>
+
+        <div id="sechsteModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('sechsteModal')">&times;</span>
+                <p>Qualität und Sicherheit stehen bei uns an erster Stelle. Wir unterstützen unsere Kunden dabei, hohe Qualitäts- und Sicherheitsstandards auf der Baustelle zu gewährleisten.</p>
+            </div>
+        </div>
+
+        <div id="siebteModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('siebteModal')">&times;</span>
+                <p>Irosman Bau GmbH kann Ihnen dabei helfen, qualifizierte und zuverlässige Subunternehmer auszuwählen, die für spezielle Aufgaben im Bauprojekt verantwortlich sind.</p>
+            </div>
+        </div>
+
+
+        </div>
+      </section>
+
+      <section class="projekte container section">
+        <a class="projekte_link" href="projekte.html"><h6>UNSERE PROJEKTE</h6></a>
+      </section>
+
+      <section class="contact container section" id="contact">
+        <h2>Contact Us</h2>
+          <!-- E-Mail Placeholder -->
+          <p><a href="mailto:info@irosman.com">info@irosman.com</a></p> <br>
+          <!-- Google Maps Image with Link -->
+          <p>Finde uns hier:</p>
+          <a href="https://g.co/kgs/Lsmvuj2" target="_blank">
+            <img class="footerimg" src="Public/Maps.jpg" alt="Google Maps Location">
+          </a> <br>
+          <!-- Company Address -->
+          <p>Brockmannstraße 1, 63075 Offenbach am Main</p>
+      </section>
+      
+    </main>
+<br><br>
+    <footer>
+      <p>&copy; ychyya! All Rights Reserved.</p>
+    </footer>
+
+    <script type="module" src="./src/main.js"></script>
+
+    <script>
+      function openModal(modalId) {
+            document.getElementById(modalId).style.display = 'block';
+        }
+
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = 'none';
+        }
+    </script>
+
+    <script>
+        function toggleMobileNav() {
+        const mobileNav = document.querySelector('.mobile-nav');
+        mobileNav.classList.toggle('hidden');
+        mobileNav.classList.toggle('active');
+        }
+    </script>
+  </body>
+</html>
